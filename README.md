@@ -23,6 +23,8 @@ let pwSwitch = PWSwitch(frame: CGRect(x: 0, y: 0, width: 50, height: 26))
 view.addSubview(pwSwitch)
 ```
 
+![PWSwitch default example](/example/assets/switch_1.gif)
+
 Alternatively you can use storyboard and/or autolayout to add `PWSwitch` to your view.
 
 `PWSwitch` supports standard `UISwitch` `setOn(on: Bool, animated :Bool)` method to change state of `PWSwitch` from code, add sends `UIControlEvents.ValueChanged` event when state changes. Current state of the control can be obtained with the `on` property.
