@@ -23,7 +23,7 @@ let pwSwitch = PWSwitch(frame: CGRect(x: 0, y: 0, width: 50, height: 26))
 view.addSubview(pwSwitch)
 ```
 
-![PWSwitch default example](/example/assets/switch_1.gif)
+![PWSwitch default example](/Example/Assets/switch_1.gif)
 
 Alternatively you can use storyboard and/or autolayout to add `PWSwitch` to your view.
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PWSwitch'
-  s.version          = '0.0.1'
+  s.version          = '1.0.0'
   s.summary          = 'Highly customizable UISwitch built with CALayers and CAAnimations'
 
 # This description is used to generate tags and improve search results.
