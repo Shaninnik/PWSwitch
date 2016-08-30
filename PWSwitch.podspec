@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Custom UISwitch implementation designed for those who want more control over the looks of the component. Built with CALayers and CAAnimations for finer control and nice interaction visual effects.
                        DESC
 
   s.homepage         = 'https://github.com/Shaninnik/PWSwitch'

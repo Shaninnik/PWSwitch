@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+@IBDesignable
 public class PWSwitch: UIControl {
     
     var backLayer: CALayer!
@@ -17,7 +18,7 @@ public class PWSwitch: UIControl {
     var on = false
     
     /// UIAppearance compatible property
-    dynamic var trackOffBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
+    @IBInspectable dynamic var trackOffBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._trackOffBorderColor }
         set {
             self._trackOffBorderColor = newValue
@@ -26,7 +27,7 @@ public class PWSwitch: UIControl {
     }
     private var _trackOffBorderColor: UIColor?
     
-    dynamic var trackOffPushBorederColor: UIColor? { // UI_APPEARANCE_SELECTOR
+    @IBInspectable dynamic var trackOffPushBorederColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._trackOffPushBorederColor }
         set {
             self._trackOffPushBorederColor = newValue
@@ -34,7 +35,7 @@ public class PWSwitch: UIControl {
     }
     private var _trackOffPushBorederColor: UIColor?
     
-    dynamic var trackOffPushFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
+    @IBInspectable dynamic var trackOffPushFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._trackOffPushFillColor }
         set {
             self._trackOffPushFillColor = newValue
@@ -42,7 +43,7 @@ public class PWSwitch: UIControl {
     }
     private var _trackOffPushFillColor: UIColor?
     
-    dynamic var trackOffFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
+    @IBInspectable dynamic var trackOffFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._trackOffFillColor }
         set {
             self._trackOffFillColor = newValue
@@ -51,7 +52,7 @@ public class PWSwitch: UIControl {
     }
     private var _trackOffFillColor: UIColor?
     
-    dynamic var trackOnFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
+    @IBInspectable dynamic var trackOnFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._trackOnFillColor }
         set {
             self._trackOnFillColor = newValue
@@ -60,7 +61,7 @@ public class PWSwitch: UIControl {
     private var _trackOnFillColor: UIColor?
     
     
-    dynamic var thumbOffBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
+    @IBInspectable dynamic var thumbOffBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._thumbOffBorderColor }
         set {
             self._thumbOffBorderColor = newValue
@@ -70,7 +71,7 @@ public class PWSwitch: UIControl {
     private var _thumbOffBorderColor: UIColor?
     
     
-    dynamic var thumbOnBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
+    @IBInspectable dynamic var thumbOnBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._thumbOnBorderColor }
         set {
             self._thumbOnBorderColor = newValue
@@ -79,7 +80,7 @@ public class PWSwitch: UIControl {
     private var _thumbOnBorderColor: UIColor?
     
     
-    dynamic var thumbOffFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
+    @IBInspectable dynamic var thumbOffFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._thumbOffFillColor }
         set {
             self._thumbOffFillColor = newValue
@@ -88,25 +89,16 @@ public class PWSwitch: UIControl {
     }
     private var _thumbOffFillColor: UIColor?
     
-    dynamic var thumbOnFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
+    @IBInspectable dynamic var thumbOnFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._thumbOnFillColor }
         set {
             self._thumbOnFillColor = newValue
         }
     }
     private var _thumbOnFillColor: UIColor?
+
     
-    dynamic var thumbShadowColor: UIColor? { // UI_APPEARANCE_SELECTOR
-        get { return self._thumbShadowColor }
-        set {
-            self._thumbShadowColor = newValue
-            
-            self.thumbLayer.shadowColor = _thumbShadowColor?.CGColor
-        }
-    }
-    private var _thumbShadowColor: UIColor?
-    
-    dynamic var thumbDiameter: CGFloat { // UI_APPEARANCE_SELECTOR
+    @IBInspectable dynamic var thumbDiameter: CGFloat { // UI_APPEARANCE_SELECTOR
         get { return self._thumbDiameter }
         set {
             self._thumbDiameter = newValue
@@ -117,7 +109,7 @@ public class PWSwitch: UIControl {
     }
     private var _thumbDiameter: CGFloat
     
-    dynamic var cornerRadius: CGFloat { // UI_APPEARANCE_SELECTOR
+    @IBInspectable dynamic var cornerRadius: CGFloat { // UI_APPEARANCE_SELECTOR
         get { return self._cornerRadius }
         set {
             self._cornerRadius = newValue
@@ -127,7 +119,7 @@ public class PWSwitch: UIControl {
     }
     private var _cornerRadius: CGFloat
     
-    dynamic var thumbCornerRadius: CGFloat { // UI_APPEARANCE_SELECTOR
+    @IBInspectable dynamic var thumbCornerRadius: CGFloat { // UI_APPEARANCE_SELECTOR
         get { return self._thumbCornerRadius }
         set {
             self._thumbCornerRadius = newValue
@@ -137,7 +129,7 @@ public class PWSwitch: UIControl {
     }
     private var _thumbCornerRadius: CGFloat
     
-    dynamic var shouldFillOnPush: Bool { // UI_APPEARANCE_SELECTOR
+    @IBInspectable dynamic var shouldFillOnPush: Bool { // UI_APPEARANCE_SELECTOR
         get { return self._shouldFillOnPush }
         set {
             self._shouldFillOnPush = newValue
@@ -145,6 +137,39 @@ public class PWSwitch: UIControl {
     }
     private var _shouldFillOnPush: Bool
     
+    @IBInspectable dynamic var trackInset: CGFloat { // UI_APPEARANCE_SELECTOR
+        get { return self._trackInset }
+        set {
+            self._trackInset = newValue
+            
+            //self.thumbLayer.cornerRadius = _thumbCornerRadius
+        }
+    }
+    private var _trackInset: CGFloat
+    
+    
+    @IBInspectable dynamic var thumbShadowColor: UIColor? { // UI_APPEARANCE_SELECTOR
+        get { return self._thumbShadowColor }
+        set {
+            self._thumbShadowColor = newValue
+            
+            self.thumbLayer.shadowColor = _thumbShadowColor?.CGColor
+        }
+    }
+    private var _thumbShadowColor: UIColor?
+    
+    @IBInspectable dynamic var shadowStrength: CGFloat { // UI_APPEARANCE_SELECTOR
+        get { return self._shadowStrength }
+        set {
+            self._shadowStrength = newValue
+            
+            self.thumbLayer.shadowOffset = CGSize(width: 0, height: 1.5 * _shadowStrength)
+            self.thumbLayer.shadowRadius = 0.6 * (_shadowStrength * 2)
+            //self.thumbLayer.cornerRadius = _thumbCornerRadius
+        }
+    }
+    private var _shadowStrength: CGFloat
+
     //var thumbOnBorderColor = UIColor.colorWithRGB(0xF0AA26).CGColor
     
     let thumbDelta:CGFloat = 6
@@ -156,6 +181,8 @@ public class PWSwitch: UIControl {
         self._cornerRadius = 13
         self._thumbCornerRadius = 7
         self._shouldFillOnPush = true
+        self._trackInset = 0
+        self._shadowStrength = 1
         
         super.init(frame: frame)
         
@@ -167,6 +194,8 @@ public class PWSwitch: UIControl {
         self._cornerRadius = 13
         self._thumbCornerRadius = 7
         self._shouldFillOnPush = true
+        self._trackInset = 0
+        self._shadowStrength = 1
         
         super.init(coder: aDecoder)!
         
@@ -178,6 +207,8 @@ public class PWSwitch: UIControl {
         self._cornerRadius = 13
         self._thumbCornerRadius = 7
         self._shouldFillOnPush = true
+        self._trackInset = 0
+        self._shadowStrength = 1
         
         super.init(frame: CGRectZero)
         
@@ -185,6 +216,7 @@ public class PWSwitch: UIControl {
     }
     
     private func baseInit() {
+        clipsToBounds = false
         
         //init default style
         self._trackOffBorderColor = UIColorFromRGB(0xB1BBC3)
@@ -195,7 +227,7 @@ public class PWSwitch: UIControl {
         self._thumbOnBorderColor = UIColorFromRGB(0xF0AA26)
         self._thumbOffFillColor = UIColorFromRGB(0xFFFFFF)
         self._thumbOnFillColor = UIColorFromRGB(0xFFFFFF)
-        self._thumbShadowColor = UIColorFromRGB(0x919CA6)
+        self._thumbShadowColor = UIColorFromRGB(0x919CA6).colorWithAlphaComponent(0.26)
         
         backLayer = CALayer()
         backLayer.frame = CGRect(x: 0, y: 0, width: 50, height: 26)
@@ -210,10 +242,10 @@ public class PWSwitch: UIControl {
         thumbLayer.cornerRadius = _thumbCornerRadius
         thumbLayer.backgroundColor = _thumbOffFillColor?.CGColor
         thumbLayer.borderWidth = 1
-        thumbLayer.shadowOffset = CGSize(width: 0, height: 1.5)
-        thumbLayer.shadowRadius = 0.6
+        thumbLayer.shadowOffset = CGSize(width: 0, height: 1.5 * _shadowStrength)
+        thumbLayer.shadowRadius = 0.6 * (_shadowStrength * 2)
         thumbLayer.shadowColor = _thumbShadowColor?.CGColor
-        thumbLayer.shadowOpacity = 0.26
+        thumbLayer.shadowOpacity = 1
         thumbLayer.borderColor = _thumbOffBorderColor?.CGColor
         
         layer.addSublayer(thumbLayer)
@@ -226,7 +258,7 @@ public class PWSwitch: UIControl {
     override public func layoutSubviews() {
         super.layoutSubviews()
         
-        backLayer.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
+        backLayer.frame = CGRect(x: 0 + trackInset, y: 0 + trackInset, width: frame.width - trackInset*2.0, height: frame.height - trackInset*2.0)
         
         if (on) {
             thumbLayer.frame = getThumbOnRect()
