@@ -188,6 +188,62 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dkJ-4f-X4L" customClass="PWSwitch" customModule="PWSwitch">
+                                        <rect key="frame" x="30" y="292" width="140" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="IHH-hJ-QMh"/>
+                                            <constraint firstAttribute="width" constant="140" id="h82-8c-WFV"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="thumbDiameter">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldFillOnPush" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="thumbOnFillColor">
+                                                <color key="value" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="thumbOnBorderColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="thumbOffBorderColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="thumbOffFillColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackOffBorderColor">
+                                                <color key="value" red="0.69019607839999997" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackOffPushBorederColor">
+                                                <color key="value" red="0.78882233680000002" green="0.78665726989999996" blue="0.79365706010000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackOnFillColor">
+                                                <color key="value" red="0.46666666670000001" green="0.76078431369999999" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackOffFillColor">
+                                                <color key="value" red="0.69019607839999997" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="trackInset">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowStrength">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="thumbShadowColor">
+                                                <color key="value" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackOffPushBorderColor">
+                                                <color key="value" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackOffPushFillColor">
+                                                <color key="value" red="0.54901960780000003" green="0.88235294119999996" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -196,6 +252,7 @@
                                     <constraint firstItem="stC-XT-NAS" firstAttribute="top" secondItem="7xJ-ZF-uC4" secondAttribute="bottom" constant="15" id="JTT-0U-anL"/>
                                     <constraint firstItem="b09-39-KZp" firstAttribute="top" secondItem="0It-Bw-OAT" secondAttribute="bottom" constant="25" id="LSI-zG-xuq"/>
                                     <constraint firstAttribute="height" constant="400" id="Rth-Gt-0F2"/>
+                                    <constraint firstItem="dkJ-4f-X4L" firstAttribute="top" secondItem="jaS-QG-MbW" secondAttribute="bottom" constant="15" id="XCH-yU-VdR"/>
                                     <constraint firstItem="jaS-QG-MbW" firstAttribute="top" secondItem="7xJ-ZF-uC4" secondAttribute="bottom" constant="25" id="a91-7K-m1S"/>
                                     <constraint firstItem="jaS-QG-MbW" firstAttribute="centerX" secondItem="old-fy-t0Q" secondAttribute="centerX" id="dy6-wt-4tY"/>
                                     <constraint firstItem="7xJ-ZF-uC4" firstAttribute="centerX" secondItem="old-fy-t0Q" secondAttribute="centerX" id="eM5-sU-4iV"/>
@@ -204,6 +261,7 @@
                                     <constraint firstItem="7xJ-ZF-uC4" firstAttribute="top" secondItem="b09-39-KZp" secondAttribute="bottom" constant="25" id="gKZ-Wd-bwd"/>
                                     <constraint firstItem="jaS-QG-MbW" firstAttribute="top" secondItem="7xJ-ZF-uC4" secondAttribute="bottom" constant="25" id="hBQ-dE-rqH"/>
                                     <constraint firstItem="jaS-QG-MbW" firstAttribute="top" secondItem="stC-XT-NAS" secondAttribute="bottom" constant="25" id="hof-c9-gMN"/>
+                                    <constraint firstItem="dkJ-4f-X4L" firstAttribute="centerX" secondItem="old-fy-t0Q" secondAttribute="centerX" id="vi7-fU-QWa"/>
                                     <constraint firstItem="0It-Bw-OAT" firstAttribute="centerX" secondItem="old-fy-t0Q" secondAttribute="centerX" id="w4q-Ch-Jnu"/>
                                 </constraints>
                                 <variation key="default">
@@ -220,6 +278,9 @@
                             <constraint firstItem="old-fy-t0Q" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="qlX-YX-tnv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pwSwitch" destination="dkJ-4f-X4L" id="YIm-a5-oRL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

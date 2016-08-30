@@ -18,7 +18,7 @@ public class PWSwitch: UIControl {
     public var on = false
     
     /// UIAppearance compatible property
-    @IBInspectable dynamic var trackOffBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
+    @IBInspectable public dynamic var trackOffBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._trackOffBorderColor }
         set {
             self._trackOffBorderColor = newValue
@@ -27,23 +27,16 @@ public class PWSwitch: UIControl {
     }
     private var _trackOffBorderColor: UIColor?
     
-    @IBInspectable dynamic var trackOffPushBorederColor: UIColor? { // UI_APPEARANCE_SELECTOR
-        get { return self._trackOffPushBorederColor }
+    @IBInspectable public dynamic var trackOffPushBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
+        get { return self._trackOffPushBorderColor }
         set {
-            self._trackOffPushBorederColor = newValue
+            self._trackOffPushBorderColor = newValue
         }
     }
-    private var _trackOffPushBorederColor: UIColor?
+    private var _trackOffPushBorderColor: UIColor?
     
-    @IBInspectable dynamic var trackOffPushFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
-        get { return self._trackOffPushFillColor }
-        set {
-            self._trackOffPushFillColor = newValue
-        }
-    }
-    private var _trackOffPushFillColor: UIColor?
     
-    @IBInspectable dynamic var trackOffFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
+    @IBInspectable public dynamic var trackOffFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._trackOffFillColor }
         set {
             self._trackOffFillColor = newValue
@@ -51,17 +44,8 @@ public class PWSwitch: UIControl {
         }
     }
     private var _trackOffFillColor: UIColor?
-    
-    @IBInspectable dynamic var trackOnFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
-        get { return self._trackOnFillColor }
-        set {
-            self._trackOnFillColor = newValue
-        }
-    }
-    private var _trackOnFillColor: UIColor?
-    
-    
-    @IBInspectable dynamic var thumbOffBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
+
+    @IBInspectable public dynamic var thumbOffBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._thumbOffBorderColor }
         set {
             self._thumbOffBorderColor = newValue
@@ -70,17 +54,9 @@ public class PWSwitch: UIControl {
     }
     private var _thumbOffBorderColor: UIColor?
     
+
     
-    @IBInspectable dynamic var thumbOnBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
-        get { return self._thumbOnBorderColor }
-        set {
-            self._thumbOnBorderColor = newValue
-        }
-    }
-    private var _thumbOnBorderColor: UIColor?
-    
-    
-    @IBInspectable dynamic var thumbOffFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
+    @IBInspectable public dynamic var thumbOffFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._thumbOffFillColor }
         set {
             self._thumbOffFillColor = newValue
@@ -89,7 +65,26 @@ public class PWSwitch: UIControl {
     }
     private var _thumbOffFillColor: UIColor?
     
-    @IBInspectable dynamic var thumbOnFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
+    
+    @IBInspectable public dynamic var trackOnFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
+        get { return self._trackOnFillColor }
+        set {
+            self._trackOnFillColor = newValue
+        }
+    }
+    private var _trackOnFillColor: UIColor?
+    
+    
+    @IBInspectable public dynamic var thumbOnBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
+        get { return self._thumbOnBorderColor }
+        set {
+            self._thumbOnBorderColor = newValue
+        }
+    }
+    private var _thumbOnBorderColor: UIColor?
+    
+    
+    @IBInspectable public dynamic var thumbOnFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._thumbOnFillColor }
         set {
             self._thumbOnFillColor = newValue
@@ -98,7 +93,7 @@ public class PWSwitch: UIControl {
     private var _thumbOnFillColor: UIColor?
 
     
-    @IBInspectable dynamic var thumbDiameter: CGFloat { // UI_APPEARANCE_SELECTOR
+    @IBInspectable public dynamic var thumbDiameter: CGFloat { // UI_APPEARANCE_SELECTOR
         get { return self._thumbDiameter }
         set {
             self._thumbDiameter = newValue
@@ -109,7 +104,7 @@ public class PWSwitch: UIControl {
     }
     private var _thumbDiameter: CGFloat
     
-    @IBInspectable dynamic var cornerRadius: CGFloat { // UI_APPEARANCE_SELECTOR
+    @IBInspectable public dynamic var cornerRadius: CGFloat { // UI_APPEARANCE_SELECTOR
         get { return self._cornerRadius }
         set {
             self._cornerRadius = newValue
@@ -119,7 +114,7 @@ public class PWSwitch: UIControl {
     }
     private var _cornerRadius: CGFloat
     
-    @IBInspectable dynamic var thumbCornerRadius: CGFloat { // UI_APPEARANCE_SELECTOR
+    @IBInspectable public dynamic var thumbCornerRadius: CGFloat { // UI_APPEARANCE_SELECTOR
         get { return self._thumbCornerRadius }
         set {
             self._thumbCornerRadius = newValue
@@ -129,7 +124,7 @@ public class PWSwitch: UIControl {
     }
     private var _thumbCornerRadius: CGFloat
     
-    @IBInspectable dynamic var shouldFillOnPush: Bool { // UI_APPEARANCE_SELECTOR
+    @IBInspectable public dynamic var shouldFillOnPush: Bool { // UI_APPEARANCE_SELECTOR
         get { return self._shouldFillOnPush }
         set {
             self._shouldFillOnPush = newValue
@@ -137,18 +132,16 @@ public class PWSwitch: UIControl {
     }
     private var _shouldFillOnPush: Bool
     
-    @IBInspectable dynamic var trackInset: CGFloat { // UI_APPEARANCE_SELECTOR
+    @IBInspectable public dynamic var trackInset: CGFloat { // UI_APPEARANCE_SELECTOR
         get { return self._trackInset }
         set {
             self._trackInset = newValue
-            
-            //self.thumbLayer.cornerRadius = _thumbCornerRadius
         }
     }
     private var _trackInset: CGFloat
     
     
-    @IBInspectable dynamic var thumbShadowColor: UIColor? { // UI_APPEARANCE_SELECTOR
+    @IBInspectable public dynamic var thumbShadowColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._thumbShadowColor }
         set {
             self._thumbShadowColor = newValue
@@ -158,19 +151,16 @@ public class PWSwitch: UIControl {
     }
     private var _thumbShadowColor: UIColor?
     
-    @IBInspectable dynamic var shadowStrength: CGFloat { // UI_APPEARANCE_SELECTOR
+    @IBInspectable public dynamic var shadowStrength: CGFloat { // UI_APPEARANCE_SELECTOR
         get { return self._shadowStrength }
         set {
             self._shadowStrength = newValue
             
             self.thumbLayer.shadowOffset = CGSize(width: 0, height: 1.5 * _shadowStrength)
             self.thumbLayer.shadowRadius = 0.6 * (_shadowStrength * 2)
-            //self.thumbLayer.cornerRadius = _thumbCornerRadius
         }
     }
     private var _shadowStrength: CGFloat
-
-    //var thumbOnBorderColor = UIColor.colorWithRGB(0xF0AA26).CGColor
     
     let thumbDelta:CGFloat = 6
     
@@ -220,7 +210,7 @@ public class PWSwitch: UIControl {
         
         //init default style
         self._trackOffBorderColor = UIColorFromRGB(0xB1BBC3)
-        self.trackOffPushBorederColor = UIColorFromRGB(0xE0E4E9)
+        self._trackOffPushBorderColor = UIColorFromRGB(0xE0E4E9)
         self._trackOffFillColor = UIColor.clearColor()
         self._trackOnFillColor = UIColorFromRGB(0xFFB831)
         self._thumbOffBorderColor = UIColorFromRGB(0xB1BBC3)
@@ -357,7 +347,7 @@ public class PWSwitch: UIControl {
             let bgBorderColorAnimation = CABasicAnimation(keyPath: "borderColor")
             bgBorderColorAnimation.timingFunction = CAMediaTimingFunction(controlPoints: 0.55, 0.055, 0.675, 0.19)
             bgBorderColorAnimation.fromValue = trackOffBorderColor?.CGColor
-            bgBorderColorAnimation.toValue = trackOffPushBorederColor?.CGColor
+            bgBorderColorAnimation.toValue = trackOffPushBorderColor?.CGColor
             bgBorderColorAnimation.fillMode = kCAFillModeForwards
             bgBorderColorAnimation.duration = 0.25
             bgBorderColorAnimation.removedOnCompletion = false
@@ -470,7 +460,7 @@ public class PWSwitch: UIControl {
                 
                 let bgBorderColorAnimation = CABasicAnimation(keyPath: "borderColor")
                 bgBorderColorAnimation.timingFunction = CAMediaTimingFunction(controlPoints: 0.165, 0.84, 0.44, 1)
-                bgBorderColorAnimation.fromValue = trackOffPushBorederColor?.CGColor
+                bgBorderColorAnimation.fromValue = trackOffPushBorderColor?.CGColor
                 bgBorderColorAnimation.toValue = trackOffBorderColor?.CGColor
                 bgBorderColorAnimation.fillMode = kCAFillModeForwards
                 bgBorderColorAnimation.duration = 0.25
@@ -594,7 +584,7 @@ public class PWSwitch: UIControl {
         
         let bgBorderColorAnimation = CABasicAnimation(keyPath: "borderColor")
         bgBorderColorAnimation.timingFunction = CAMediaTimingFunction(controlPoints: 0.165, 0.84, 0.44, 1)
-        bgBorderColorAnimation.fromValue = trackOffPushBorederColor?.CGColor
+        bgBorderColorAnimation.fromValue = trackOffPushBorderColor?.CGColor
         bgBorderColorAnimation.toValue = trackOnFillColor?.CGColor
         bgBorderColorAnimation.fillMode = kCAFillModeForwards
         bgBorderColorAnimation.duration = 0.25
