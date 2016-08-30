@@ -15,7 +15,7 @@ public class PWSwitch: UIControl {
     var backLayer: CALayer!
     var thumbLayer: CALayer!
     
-    var on = false
+    public var on = false
     
     /// UIAppearance compatible property
     @IBInspectable dynamic var trackOffBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
