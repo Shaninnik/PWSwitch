@@ -1,0 +1,22 @@
+{
+  "name": "PWSwitch",
+  "version": "0.1.0",
+  "summary": "A short description of PWSwitch.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/PWSwitch",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Nikita Shanin": "shaninnik@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/PWSwitch.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PWSwitch/Classes/**/*"
+}

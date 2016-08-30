@@ -1,0 +1,6 @@
+framework module PWSwitch {
+  umbrella header "PWSwitch-umbrella.h"
+
+  export *
+  module * { export * }
+}
