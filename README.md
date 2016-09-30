@@ -1,9 +1,9 @@
 # PWSwitch
 
-[![CI Status](http://img.shields.io/travis/Nikita Shanin/PWSwitch.svg?style=flat)](https://travis-ci.org/Nikita Shanin/PWSwitch)
 [![Version](https://img.shields.io/cocoapods/v/PWSwitch.svg?style=flat)](http://cocoapods.org/pods/PWSwitch)
+![Platform: iOS 8+](https://img.shields.io/badge/platform-iOS%208%2B-blue.svg?style=flat)
+[![Language: Swift 3](https://img.shields.io/badge/language-swift3-f48041.svg?style=flat)](https://developer.apple.com/swift)
 [![License](https://img.shields.io/cocoapods/l/PWSwitch.svg?style=flat)](http://cocoapods.org/pods/PWSwitch)
-[![Platform](https://img.shields.io/cocoapods/p/PWSwitch.svg?style=flat)](http://cocoapods.org/pods/PWSwitch)
 
 Custom `UISwitch` implementation designed for those who want more control over the looks of the component. Built with `CALayer` and `CAAnimation` for finer control and nice interaction visual effects.
 
@@ -64,6 +64,12 @@ Values set with the `PWSwitch.appearance()` override `@IBInspectable` values set
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+- iOS 8.3+ 
+- Xcode 8.0+
+- Swift 3.0+
+
+Please use release 1.0.0 for the final Swift 2.x supported version.
 
 ## Installation
 
