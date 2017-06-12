@@ -14,7 +14,7 @@ Custom `UISwitch` implementation designed for those who want more control over t
 - Supports standard UISwitch setOn method and ValueChanged control event
 - Replicates standard UISwitch visual feedback animations
 
-## v2 breaking changes
+## 1.1 version breaking changes
 
 - Renamed `trackOnFillColor` to `trackOnBorderColor` and added real `trackOnFillColor` property which works only if `shouldFillOnPush` is set to false. To restore previous behavior rename `trackOnFillColor` to `trackOnBorderColor` in your project everywhere you use it and then set new `trackOnFillColor` to clear. (should be by default)
 - Added `thumbOffPushBorderColor`. If you have changed default `thumbOffBorderColor` then you probably need to adjust `thumbOffPushBorderColor` now also.
