@@ -14,6 +14,11 @@ Custom `UISwitch` implementation designed for those who want more control over t
 - Supports standard UISwitch setOn method and ValueChanged control event
 - Replicates standard UISwitch visual feedback animations
 
+## v2 breaking changes
+
+- Renamed `trackOnFillColor` to `trackOnBorderColor` and added real `trackOnFillColor` property which works only if `shouldFillOnPush` is set to false. To restore previous behavior rename `trackOnFillColor` to `trackOnBorderColor` in your project everywhere you use it and then set new `trackOnFillColor` to clear. (should be by default)
+- Added `thumbOffPushBorderColor`. If you have changed default `thumbOffBorderColor` then you probably need to adjust `thumbOffPushBorderColor` now also.
+
 ## Usage
 
 Simply add `PWSwitch` init with non-zero rect to your view. *50x26* is the default size, changing it may require adjusting `thumbDiameter` property
@@ -40,10 +45,12 @@ if pwSwitch.on {
 `PWSwitch` has a wide number of properties to customize it's appearance. All properties can be set globally with the `UIAppearance` proxy: `PWSwitch.appearance()`, or directly in code or Interface Builder attribute inspector. Global values set with the `UIAppearance` can be overriden for specific instance by changing their property values directly.
 
 - `trackOffBorderColor` - track border color when state is Off
-- `trackOffPushBorderColor` - track border color when switch is pressed (touch began, but not ended). Border width is animated and fills inside of the track completely if `shouldFillOnPush` is true.
+- `trackOffPushBorderColor` - track border color when switch is pressed (touch began, but not ended). Border width is animated and fills inside of the track completely if `shouldFillOnPush` is true
 - `trackOffFillColor` - track fill color when state is Off
 - `thumbOffBorderColor` - thumb border color when state is Off
+- `thumbOffPushBorderColor` - thumb border color when switch is pressed (touch began, but not ended). Set to the same value as `thumbOffBorderColor` if border color animation is not desireable
 - `thumbOffFillColor` - thumb fill color when state is Off
+- `trackBorderFillColor` - track border color when state is On. If `shouldFillOnPush` is true then border completely fills track
 - `trackOnFillColor` - track fill color when state is On
 - `thumbOnBorderColor` - thumb border color when state is On
 - `thumbOnFillColor` - thumb fill color when state is On
