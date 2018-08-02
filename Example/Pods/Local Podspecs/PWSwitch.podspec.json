@@ -1,9 +1,9 @@
 {
   "name": "PWSwitch",
-  "version": "0.1.0",
-  "summary": "A short description of PWSwitch.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/PWSwitch",
+  "version": "1.1.1",
+  "summary": "Highly customizable UISwitch built with CALayers and CAAnimations",
+  "description": "Custom UISwitch implementation designed for those who want more control over the looks of the component. Built with CALayers and CAAnimations for finer control and nice interaction visual effects.",
+  "homepage": "https://github.com/Shaninnik/PWSwitch",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,11 @@
     "Nikita Shanin": "shaninnik@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/PWSwitch.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/Shaninnik/PWSwitch.git",
+    "tag": "1.1.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "PWSwitch/Classes/**/*"
+  "source_files": "PWSwitch/**/*.swift"
 }

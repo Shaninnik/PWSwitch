@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PWSwitch'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = 'Highly customizable UISwitch built with CALayers and CAAnimations'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Custom UISwitch implementation designed for those who want more control over the
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'PWSwitch/Classes/**/*'
+  s.source_files = 'PWSwitch/**/*.swift'
   
   # s.resource_bundles = {
   #   'PWSwitch' => ['PWSwitch/Assets/*.png']
