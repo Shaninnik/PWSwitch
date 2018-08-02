@@ -15,7 +15,7 @@ open class PWSwitch: UIControl {
     var backLayer: CALayer!
     var thumbLayer: CALayer!
     
-    open var on = false
+    open private(set) var on = false
     
     /// UIAppearance compatible property
     @IBInspectable open dynamic var trackOffBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
@@ -713,18 +713,22 @@ open class PWSwitch: UIControl {
                 }
                 
                 backLayer.borderColor = trackOnBorderColor?.cgColor
+                backLayer.backgroundColor = trackOnFillColor?.cgColor
                 
                 thumbLayer.position = getThumbOnPos()
                 thumbLayer.borderColor = thumbOnBorderColor?.cgColor
+                thumbLayer.backgroundColor = thumbOnFillColor?.cgColor
             } else {
                 if (shouldFillOnPush) {
                     backLayer.borderWidth = 1
                 }
                 
-                backLayer.borderColor = trackOffFillColor?.cgColor
+                backLayer.borderColor = trackOffBorderColor?.cgColor
+                backLayer.backgroundColor = trackOffFillColor?.cgColor
                 
                 thumbLayer.position = getThumbOffPos()
                 thumbLayer.borderColor = thumbOffBorderColor?.cgColor
+                thumbLayer.backgroundColor = thumbOffFillColor?.cgColor
             }
         }
     }
