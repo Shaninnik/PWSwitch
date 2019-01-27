@@ -38,14 +38,14 @@
 
 /* Begin PBXFileReference section */
 		02064C4ED2BC988E5012E0AD0CA9D16E /* Pods-PWSwitchExample_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PWSwitchExample_Tests.modulemap"; sourceTree = "<group>"; };
-		0B675DD114B762662B56B705461EE190 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0B675DD114B762662B56B705461EE190 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1BE12F4E64E7D2FDC8C0ECE0625AD411 /* Pods-PWSwitchExample_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PWSwitchExample_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		233DDC7BC7FA39D0DC370A2F9DFD0972 /* Pods-PWSwitchExample_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PWSwitchExample_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2B737F7A264C82A2D1307534FD548C99 /* Pods-PWSwitchExample_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PWSwitchExample_Tests-umbrella.h"; sourceTree = "<group>"; };
-		304BC57A519B747654B85F82B70FF7A9 /* Pods_PWSwitchExample_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PWSwitchExample_Tests.framework; path = "Pods-PWSwitchExample_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		304BC57A519B747654B85F82B70FF7A9 /* Pods_PWSwitchExample_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PWSwitchExample_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		347807B8CE1E67D3CB75DCDC7F8E304B /* Pods-PWSwitchExample_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PWSwitchExample_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		392B1CA91529E209DD9E649D6E87CF76 /* Pods-PWSwitch_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PWSwitch_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		43004401E767CC075C786CDF182AA417 /* PWSwitch.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = PWSwitch.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		43004401E767CC075C786CDF182AA417 /* PWSwitch.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = PWSwitch.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4882C2226A8B3A08F3DDA7036428D2BB /* Pods-PWSwitch_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PWSwitch_Example.modulemap"; sourceTree = "<group>"; };
 		592591CF80F4DF810718029F8248FE79 /* Pods-PWSwitch_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PWSwitch_Example-resources.sh"; sourceTree = "<group>"; };
 		62A22E3477A03258A67B89020C8684BF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,15 +57,15 @@
 		871BEA5B3F46364D8337822938E36E9A /* PWSwitch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PWSwitch-umbrella.h"; sourceTree = "<group>"; };
 		8884F453C5156ED261D30E7A52FFC081 /* Pods-PWSwitch_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PWSwitch_Example-umbrella.h"; sourceTree = "<group>"; };
 		928834B3FFB74590AF608112E1C321AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		984FA5C15323D96368C8D64889116A6A /* PWSwitch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PWSwitch-dummy.m"; sourceTree = "<group>"; };
 		9B5EA22A25C4A57C8A60DDA0DB261940 /* Pods-PWSwitch_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PWSwitch_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9F945021D122D936E8A8B3F4A2EA4306 /* PWSwitch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PWSwitch-prefix.pch"; sourceTree = "<group>"; };
 		A12B5404CDB8202D824B4AB3E9EB8C6E /* PWSwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PWSwitch.swift; path = PWSwitch/PWSwitch.swift; sourceTree = "<group>"; };
 		A38C9C0501D6D304FD1569C4C5B8746F /* Pods-PWSwitchExample_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PWSwitchExample_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		BD9C3C015B0CAC6DB1EE492BA948D7A2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		C6390B5D194CF1E02604F4FC3288594F /* PWSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PWSwitch.framework; path = PWSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C988A3F1593179572B96A24A881F2B1E /* Pods_PWSwitch_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PWSwitch_Example.framework; path = "Pods-PWSwitch_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD9C3C015B0CAC6DB1EE492BA948D7A2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C6390B5D194CF1E02604F4FC3288594F /* PWSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PWSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C988A3F1593179572B96A24A881F2B1E /* Pods_PWSwitch_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PWSwitch_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECE3C7DEED06212F0A9E1A7FC4781F1 /* PWSwitch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PWSwitch.xcconfig; sourceTree = "<group>"; };
 		D5BC6B1E6A19FE0831E1446121BEF72F /* Pods-PWSwitchExample_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PWSwitchExample_Tests-dummy.m"; sourceTree = "<group>"; };
 		DB24989600463771282EFFB084BC025E /* Pods-PWSwitchExample_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PWSwitchExample_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -509,7 +509,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -605,7 +605,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
