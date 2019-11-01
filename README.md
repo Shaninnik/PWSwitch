@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/cocoapods/v/PWSwitch.svg?style=flat)](http://cocoapods.org/pods/PWSwitch)
 ![Platform: iOS 8+](https://img.shields.io/badge/platform-iOS%208%2B-blue.svg?style=flat)
-[![Language: Swift 4](https://img.shields.io/badge/language-swift4-f48041.svg?style=flat)](https://developer.apple.com/swift)
+[![Language: Swift 5](https://img.shields.io/badge/language-swift5-f48041.svg?style=flat)](https://developer.apple.com/swift)
 [![License](https://img.shields.io/cocoapods/l/PWSwitch.svg?style=flat)](http://cocoapods.org/pods/PWSwitch)
 
 Custom `UISwitch` implementation designed for those who want more control over the looks of the component. Built with `CALayer` and `CAAnimation` for finer control and nice interaction visual effects.
