@@ -61,7 +61,7 @@ if pwSwitch.on {
 - `trackInset` - track inset from the outer control frame. Usable if thumb is bigger than track
 - `thumbShadowColor` - thumb shadow color. Alpha value can be used to change shadow opacity
 - `shadowStrength` - overall strength of thumb shadow
-- `thumbDelta` - how much thumb grows when touhes begin. Seeting to `0` will disable thumb growing/shrinking
+- `thumbDelta` - how much thumb grows when touhes begin. Setting to `0` will disable thumb growing/shrinking
 
 ## Issues
 
