@@ -136,6 +136,19 @@ open class PWSwitch: UIControl {
         }
     }
     fileprivate var _thumbCornerRadius: CGFloat = 7
+
+    @IBInspectable open dynamic var expandThumbOnPush: Bool { // UI_APPEARANCE_SELECTOR
+        get { return self._expandThumbOnPush }
+        set {
+            self._expandThumbOnPush = newValue
+            if newValue {
+                thumbDelta = 6
+            } else {
+                thumbDelta = 0
+            }
+        }
+    }
+    fileprivate var _expandThumbOnPush: Bool = true
     
     @IBInspectable open dynamic var shouldFillOnPush: Bool { // UI_APPEARANCE_SELECTOR
         get { return self._shouldFillOnPush }
@@ -175,8 +188,8 @@ open class PWSwitch: UIControl {
     }
     fileprivate var _shadowStrength: CGFloat = 1
     
-    let thumbDelta:CGFloat = 6
-    
+    private var thumbDelta:CGFloat = 6
+
     let scale = UIScreen.main.scale
     
     override public init(frame: CGRect) {
@@ -283,7 +296,7 @@ open class PWSwitch: UIControl {
             thumbBoundsAnimation.fillMode = CAMediaTimingFillMode.forwards
             thumbBoundsAnimation.duration = 0.25
             thumbBoundsAnimation.isRemovedOnCompletion = false
-            
+
             let thumbPosAnimation = CABasicAnimation(keyPath: "position")
             thumbPosAnimation.timingFunction = CAMediaTimingFunction(controlPoints: 0.175, 0.885, 0.32, 1.275)
             thumbPosAnimation.fromValue = NSValue(cgPoint: getThumbOnPos())
@@ -313,7 +326,7 @@ open class PWSwitch: UIControl {
             animThumbGroup.fillMode = CAMediaTimingFillMode.forwards
             animThumbGroup.isRemovedOnCompletion = false
             animThumbGroup.animations = [thumbBoundsAnimation, thumbPosAnimation, thumbBorderColorAnimation, thumbFillColorAnimation]
-            
+
             thumbLayer.removeAllAnimations()
             thumbLayer.add(animThumbGroup, forKey: "thumbAnimation")
             
@@ -325,7 +338,7 @@ open class PWSwitch: UIControl {
             bgBorderAnimation.fillMode = CAMediaTimingFillMode.forwards
             bgBorderAnimation.duration = 0.25
             bgBorderAnimation.isRemovedOnCompletion = false
-            
+
             let bgBorderColorAnimation = CABasicAnimation(keyPath: "borderColor")
             bgBorderColorAnimation.timingFunction = CAMediaTimingFunction(controlPoints: 0.55, 0.055, 0.675, 0.19)
             bgBorderColorAnimation.fromValue = trackOffBorderColor.cgColor
@@ -587,7 +600,7 @@ open class PWSwitch: UIControl {
     
     fileprivate func offToOnAnim() {
         
-        
+
         let bgBorderColorAnimation = CABasicAnimation(keyPath: "borderColor")
         bgBorderColorAnimation.timingFunction = CAMediaTimingFunction(controlPoints: 0.165, 0.84, 0.44, 1)
         bgBorderColorAnimation.fromValue = trackOffPushBorderColor.cgColor
