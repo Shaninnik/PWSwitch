@@ -4,16 +4,14 @@ import PackageDescription
 let package = Package(
     name: "PWSwitch",
     platforms: [
-        .iOS(.v8)  // Based on your podspec's deployment target
+        .iOS(.v8)
     ],
     products: [
         .library(
             name: "PWSwitch",
             targets: ["PWSwitch"]),
     ],
-    dependencies: [
-        // No dependencies specified in the podspec
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "PWSwitch",
